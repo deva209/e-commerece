@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroKart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">ElectroKart</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="product-section">
+      <!-- Products will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <p id="modal-price"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
